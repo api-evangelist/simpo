@@ -1,19 +1,50 @@
 aid: simpo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/simpo.png
 name: Simpo
-description: Simpo is a company surfaced as a portfolio company of redpoint-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Simpo is a no-code digital adoption platform (DAP) that lets enterprise
+  product and customer-success teams build in-app onboarding flows, guided
+  walkthroughs, announcements, surveys, and contextual help without writing
+  code. End users are guided at the point of need inside the software they
+  already use, driving feature adoption, engagement, and retention. Founded in
+  2016 by Yohanan Hruschev and Yuval Karmi and headquartered in San Francisco,
+  Simpo raised a $4.5M seed round led by Redpoint Ventures in 2019 and was
+  acquired by WalkMe in October 2021. The product is a snippet/embed-installed
+  browser layer rather than a public developer REST API; it exposes no OpenAPI,
+  SDK, or public developer documentation surface, and the primary web host is no
+  longer reachable following the acquisition.
 url: https://raw.githubusercontent.com/api-evangelist/simpo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - redpoint-ventures
+x-acquired-by: walkme
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Digital Adoption
+- Onboarding
+- User Onboarding
+- In-App Guidance
+- Product Adoption
+- No-Code
+- Customer Success
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +52,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/simpo-domain-security.yml
 - type: Website
   url: https://www.simpo.io/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
